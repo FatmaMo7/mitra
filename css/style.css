@@ -1,0 +1,523 @@
+:root{
+  --dark:#000000;
+  --babyblue:rgb(95, 175, 201) ;
+  --greencolor: #2CBC85;
+  --color:rgba(255, 255, 255, 0.5);
+  --colortwo: #fff;
+  --background:#0d1830;
+
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html::-webkit-scrollbar{
+  width:1rem;
+}
+
+html::-webkit-scrollbar-track{
+  background:#1f1f1f;
+}
+
+html::-webkit-scrollbar-thumb{
+  background:var(--greencolor);
+}
+body{
+  font-family: 'Amiri', serif;
+ 
+}
+.btn {
+  background: var(--dark);
+  width: 120px;
+  border-radius: 5px;
+  color:white ;
+  border: 1px solid var(--greencolor);
+  padding: .5rem 1rem;
+
+  
+}
+.btn:hover{
+  background: var(--greencolor);
+  color: white;
+}
+.main-title::before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 150px;
+  height: 1px;
+  background: #ddd;
+  bottom: -19px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main-title::after{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: var(--greencolor);
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* start navbar  */
+.navbar{
+  background-color: var(--dark);
+  color: white;
+  box-shadow: 0px 2px 20px rgba(75, 75, 75, 0.1);
+
+}
+.navbar .navbar-brand{
+  color: var(--greencolor);
+  text-shadow: rgb(255, 255, 255) 1px 0 2px;
+}
+.nav-link{
+  color: var(--color);
+}
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover{
+  color: white;
+}
+.search{
+  border-right: 1px solid var(--greencolor);
+}
+.search svg{
+  color:white;
+}
+.navbar-toggler{
+  color: white;
+  border-color: white;
+  font-size: 25px;
+}
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+.navbar-toggler[aria-expanded="true"]{
+  border-color: var(--green);
+}
+/* end navbar  */
+
+/* start homepanner */
+.landing{
+  background-image: url("../images/back.jpg");
+  min-height: calc(100vh - 72px);  
+}
+
+/* end homepanner */
+
+/* start about-us  */
+.about-us{
+  color: var(--dark);
+  background: #c1d8f073;
+}
+
+.about-us .btn{
+  background: white;
+  color: var(--greencolor);
+  padding: 5px 0px;
+}
+.about-us .btn:hover{
+  color: white;
+  background: var(--greencolor);
+}
+
+/* end about-us  */
+
+/* start our projects  */
+.our-projects{
+  color: var(--background);
+}
+.our-projects  span {
+  height: 1px;
+  width: 50px;
+  background-color: var(--dark);
+  display: inline-block;
+}
+
+.img{
+  width: 350px;
+  height: 400px;
+  background-size: cover;
+  background-image: url("../images/bg.jpg");
+  
+  
+}
+.img:hover{
+  opacity: 50%;
+}
+
+.card{
+  margin-top: 190px;
+ 
+}
+.card a{
+  color: var(--greencolor);
+}
+.card-text{
+  font-size: 12px;
+}
+.our-projects .btn{
+  background: white;
+  color: var(--greencolor);
+  
+}
+.our-projects .btn:hover{
+  color: white;
+  background: var(--greencolor);
+}
+/* end our projects  */
+
+/* start investment  */
+
+
+
+.counter-box {
+display: block;
+background: #f6f6f6;
+padding: 40px 20px 37px;
+text-align: center
+} 
+
+.counter-box p {
+margin: 5px 0 0;
+padding: 0;
+color: #909090;
+font-size: 18px;
+font-weight: 500
+}
+
+.counter-box svg {
+font-size: 60px;
+margin: 0 0 15px;
+color: #d2d2d2
+}
+
+.counter { 
+display: block;
+font-size: 32px;
+font-weight: 700;
+color: #666;
+line-height: 28px
+}
+
+.counter-box.colored {
+    background: var(--greencolor);
+}
+
+.counter-box.colored p,
+.counter-box.colored svg,
+.counter-box.colored .counter {
+color: #fff
+}
+.investment {
+  border-radius: 10px;
+  height: 200px;
+  position: relative;
+  color: white;
+  overflow: hidden;
+  z-index: 1000;
+ 
+}
+.investment .container {
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+}
+.investment::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(29, 29, 29, 0.815);
+  z-index: 1;
+}
+.investment::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-size: cover;
+  background-image: url("../images/b.jpg");
+  z-index: -1;
+}
+.investment .container .row button {
+  background: white;
+  color: var(--greencolor);
+  width: 150px;
+}
+.investment .container .row button:hover {
+  color: white;
+  background-color: var(--greencolor);
+}
+
+.investment .container button img {
+  margin-right: 10px;
+}
+/* end investment  */
+
+/* end stats  */
+/* start other-services  */
+.other-services{
+  color: var(--background);
+}
+
+.other-services .btn{
+  background-color: white;
+  color: var(--greencolor);
+}
+.other-services .btn:hover{
+  color: white;
+  background-color: var(--greencolor);
+}
+/* end other-services  */
+/* start services  */
+.services{
+  background: linear-gradient(109.6deg, rgb(251, 254, 255) 18.9%,rgb(221, 231, 243)  91.1%);
+  color: var(--background);
+
+}
+.services .btn{
+  background-color: white;
+  color: var(--greencolor);
+}
+.services .btn:hover{
+  color: white;
+  background-color: var(--greencolor);
+}
+.services svg{
+  color: var(--greencolor);
+}
+/* end services  */
+
+/* start contact*/
+
+
+.contact .info {
+  border-top: 3px solid  var(--greencolor);
+  border-bottom: 3px solid var(--greencolor);
+  padding: 30px;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+}
+
+.contact .info svg {
+  color: var(--greencolor);
+  float: right;
+  background: #e7f5fb;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  font-weight: 600;
+}
+
+.contact .info p {
+  margin-bottom: 20px;
+  color: #6182ba;
+}
+
+
+
+.contact .php-email-form {
+  border-top: 3px solid var(--greencolor);
+  border-bottom: 3px solid var(--greencolor);
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--greencolor);
+}
+
+.contact .php-email-form input {
+  height: 44px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .php-email-form button[type=submit] {
+  background: white;
+  border: 1px solid var(--greencolor);
+  color: var(--greencolor);
+  transition: 0.4s;
+
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: var(--greencolor);
+  color: white;
+}
+
+/*end contact*/
+/*start revo*/
+.review {
+  padding: 50px 0;
+  background-image: url("../images/rebg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--background);
+}
+.review .container {
+  height: 80vh;
+}
+.review .top-left {
+  left: 200px;
+}
+.review .bottom-left {
+  left: 200px;
+  bottom: 0;
+}
+.review .top-right {
+  right: 200px;
+}
+.review .bottom-right {
+  right: 200px;
+}
+.review .main-left {
+  z-index: 100;
+  left: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.review .main-right {
+  right: 100px;
+  top: 50%;
+  z-index: 100;
+  transform: translateY(-50%);
+}
+
+.review h5 {
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 30px;
+}
+.review h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  max-width: 500px;
+  margin: 20px auto 50px;
+}
+.review .content {
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.review .content p {
+  margin: 50px 0;
+}
+
+.review .content span {
+  color: gray;
+}
+
+.review .carousel-control-prev,
+.review .carousel-control-next {
+  color: var(--greencolor);
+  font-size: 25px;
+}
+.review .carousel-control-prev {
+  right: 18%;
+}
+.review .carousel-control-next {
+  left: 18%;
+}
+@media (max-width: 1200px) {
+  .review .container > img {
+    display: none;
+  }
+  .review .carousel-control-prev {
+    right: 0;
+  }
+  .review .carousel-control-next {
+    left: 0;
+  }
+  .review .right-bg {
+  position: absolute;
+  right: 0;
+  top: 65%;
+  transform: translateY(-50%);
+  width: 250px;
+}
+  .review .left-bg {
+  position: absolute;
+  right: 0;
+  top: 65%;
+  transform: translateY(-50%);
+  width: 250px;
+}
+
+}
+/*end revo*/
+/* start footer  */
+.footer {
+  padding: 30px 0;
+  background-color: var(--dark);
+  
+  color: white;
+  overflow-x: hidden;
+}
+.footer .logo {
+  background-image: url("../images/button_bg.png");
+  background-size: cover;
+  color: white !important;
+  
+  height: 50px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.footer ul {
+  gap: 70px;
+  margin: 40px 0;
+}
+.footer .form {
+  margin: 20px;
+ 
+  gap: 40px;
+}
+.footer .form input {
+  background-color: white;
+  border: none;
+  padding: 10px;
+  width: 250px;
+  border-radius: 3px;
+}
+
+.footer .social {
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* end footer  */
